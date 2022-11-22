@@ -4,7 +4,7 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { FirebaseContext } from '../../context/FirebaseContext';
 
 export default function Register(){
-  const [user, setUser] = useState(null)
+  const [setUser] = useState(null)
   const [error, setError] = useState(null)
   const {auth} = useContext(FirebaseContext)
 

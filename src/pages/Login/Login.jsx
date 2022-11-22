@@ -5,7 +5,7 @@ import { FirebaseContext } from "../../context/FirebaseContext";
 import { UserContext } from "../../context/UserContext";
 
 export default function Login() {
-  const {user, setUser} = useContext(UserContext);
+  const {setUser} = useContext(UserContext);
   const {auth} = useContext(FirebaseContext)
   const [error, setError] = useState(null)
   const navigate = useNavigate();
