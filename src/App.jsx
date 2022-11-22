@@ -6,7 +6,6 @@ import markerIconPng from "leaflet/dist/images/marker-icon.png"
 
 function App() {
   const map = useRef(null)
-  const [currentPosition,setCurrentPosition] = useState({lat:0,lng:0})
   
   useEffect(()=>{
     map.current = L.map('map');
