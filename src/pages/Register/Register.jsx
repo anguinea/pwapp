@@ -18,10 +18,10 @@ export default function Register(){
       .then((userCredential) => {
         // Signed in 
         setUser(userCredential.user)
-        //Faire vibrer le tel en mode ok
         navigate("/home")
       })
       .catch((error) => {
+        navigator.vibrate([500,110,500,110,450,110,200,110,170,40,450,110,200,110,170,40,500]);
         setError(error)
       });
 
